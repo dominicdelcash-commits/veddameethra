@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ta" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedamithra Astrology Research Centre | வேதமித்ரா ஜோதிட ஆராய்ச்சி மையம்</title>
+    <meta name="description" content="Consult Vedamithra Astrology Research Centre for Vedic astrology, horoscope readings, prasannam, numerology and Vastu services in Tiruchirappalli. Call or WhatsApp to enquire.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vedamithra Astrology Research Centre">
+    <meta property="og:description" content="Astrology services and consultation enquiries in Tiruchirappalli.">
+    <meta property="og:image" content="https://i.ibb.co/RG4WgTqH/vedda-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Anek+Tamil:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        tamil: ['Anek Tamil', 'sans-serif'],
+                    },
+                    colors: {
+                        sunGold: '#f59e0b',
+                        sunRed: '#dc2626',
+                        royalBlue: '#1d4ed8',
+                        warmBg: '#fffdf9',
+                        cardBg: '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', 'Anek Tamil', sans-serif;
+            background-color: #fffdf9;
+            color: #1f2937;
+        }
+        h1, h2, h3, .font-cinzel { font-family: 'Cinzel', 'Anek Tamil', serif; }
+        
+        /* Immersive Solar System Hero */
+        .solar-container {
+            position: relative; isolation: isolate; width: 100%; height: clamp(340px, 48vw, 520px); overflow: hidden;
+            background: radial-gradient(ellipse at 50% 52%, rgba(37,57,112,.28), transparent 38%), radial-gradient(ellipse at 18% 20%, rgba(99,56,148,.18), transparent 32%), radial-gradient(ellipse at 82% 78%, rgba(14,116,144,.14), transparent 30%), linear-gradient(145deg,#03050e 0%,#0b1024 52%,#080817 100%);
+            border-bottom: 1px solid rgba(251,191,36,.35); box-shadow: inset 0 0 90px rgba(0,0,0,.55);
+        }
+        .solar-container::before,.solar-container::after { content:""; position:absolute; inset:0; pointer-events:none; z-index:-1; }
+        .solar-container::before { opacity:.55; background-image: radial-gradient(1px 1px at 8% 24%,#fff 99%,transparent),radial-gradient(1px 1px at 17% 72%,#bfdbfe 99%,transparent),radial-gradient(1.5px 1.5px at 28% 13%,#fff 99%,transparent),radial-gradient(1px 1px at 39% 84%,#fff 99%,transparent),radial-gradient(1px 1px at 61% 18%,#dbeafe 99%,transparent),radial-gradient(1.5px 1.5px at 73% 66%,#fff 99%,transparent),radial-gradient(1px 1px at 89% 29%,#fff 99%,transparent),radial-gradient(1px 1px at 94% 83%,#bfdbfe 99%,transparent); background-size:370px 260px; }
+        .solar-container::after { background:linear-gradient(90deg,rgba(3,5,14,.3),transparent 28%,transparent 72%,rgba(3,5,14,.3)); }
+        .sun-center { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:clamp(46px,7vw,68px); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at 34% 30%,#fff7b2 0%,#ffd34e 22%,#ff8b24 57%,#df3f12 82%,#8e210e 100%); box-shadow:0 0 16px 5px rgba(255,187,51,.9),0 0 48px 18px rgba(255,132,26,.48),0 0 110px 42px rgba(255,95,18,.18),inset -8px -7px 14px rgba(120,28,8,.42); z-index:12; display:flex; align-items:center; justify-content:center; animation:sun-breathe 4s ease-in-out infinite alternate; }
+        .sun-center::before { content:""; position:absolute; inset:-18px; border:1px solid rgba(255,194,82,.22); border-radius:50%; box-shadow:0 0 24px rgba(255,153,31,.2); }
+        @keyframes sun-breathe { from{filter:brightness(.96)} to{filter:brightness(1.13)} }
+        .orbit { position:absolute; top:50%; left:50%; border:1px solid rgba(183,204,255,.2); border-radius:50%; transform:translate(-50%,-50%); animation:orbit-spin linear infinite; will-change:transform; }
+        .orbit::after { content:""; position:absolute; inset:0; border-radius:inherit; border:1px solid rgba(255,255,255,.035); transform:scale(.985); }
+        .planet { position:absolute; top:0; left:50%; transform:translate(-50%,-50%); border-radius:50%; box-shadow:inset -3px -2px 5px rgba(0,0,0,.68),inset 1px 1px 3px rgba(255,255,255,.58),0 0 10px rgba(255,255,255,.14); }
+        .orbit-1{width:92px;height:58px;animation-duration:5.5s}.planet-1{width:7px;height:7px;background:radial-gradient(circle at 30% 28%,#e5e7eb,#777d89 62%,#292e39)}
+        .orbit-2{width:142px;height:88px;animation-duration:8s;animation-delay:-2.4s}.planet-2{width:11px;height:11px;background:radial-gradient(circle at 30% 28%,#fff0b3,#d88b42 58%,#713d32)}
+        .orbit-3{width:196px;height:122px;animation-duration:11s;animation-delay:-7s}.planet-3{width:12px;height:12px;background:radial-gradient(circle at 30% 28%,#b9e7ff,#3287db 53%,#102c6b);box-shadow:inset -3px -2px 5px rgba(0,0,0,.65),0 0 10px rgba(69,160,255,.45)}
+        .orbit-4{width:252px;height:156px;animation-duration:15s;animation-delay:-4s}.planet-4{width:10px;height:10px;background:radial-gradient(circle at 30% 28%,#ffc5a5,#d65b3b 58%,#70252c)}
+        .orbit-5{width:326px;height:202px;animation-duration:22s;animation-delay:-12s}.planet-5{width:20px;height:20px;background:repeating-linear-gradient(0deg,#b76d35 0 3px,#e9bc7b 3px 6px,#9d552d 6px 8px)}
+        .orbit-6{width:408px;height:252px;animation-duration:29s;animation-delay:-19s}.planet-6{width:17px;height:17px;background:radial-gradient(circle at 30% 25%,#fff0c9,#d6a963 56%,#765132)}
+        .planet-6::after{content:"";position:absolute;width:29px;height:8px;left:50%;top:50%;border:2px solid rgba(230,195,133,.88);border-left-color:rgba(230,195,133,.45);border-right-color:rgba(230,195,133,.45);border-radius:50%;transform:translate(-50%,-50%) rotate(-18deg);box-shadow:0 0 5px rgba(255,211,137,.28)}
+        .orbit-7{width:488px;height:302px;animation-duration:37s;animation-delay:-9s}.planet-7{width:14px;height:14px;background:radial-gradient(circle at 30% 28%,#d6fbff,#73cbd0 58%,#235269)}
+        .orbit-8{width:570px;height:354px;animation-duration:46s;animation-delay:-30s}.planet-8{width:13px;height:13px;background:radial-gradient(circle at 30% 28%,#a9c8ff,#4668cf 58%,#1b255d)}
+        @keyframes orbit-spin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+        @media(max-width:640px){.orbit-1{width:72px;height:48px}.orbit-2{width:112px;height:72px}.orbit-3{width:154px;height:98px}.orbit-4{width:198px;height:126px}.orbit-5{width:248px;height:158px}.orbit-6{width:300px;height:190px}.orbit-7{width:350px;height:222px}.orbit-8{width:400px;height:254px}}
+        @media(prefers-reduced-motion:reduce){.orbit,.sun-center{animation-play-state:paused}}
+        .service-card, .blog-card {
+            background: #ffffff;
+            border: 1px solid #fef08a;
+            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover, .blog-card:hover {
+            transform: translateY(-6px);
+            border-color: #f59e0b;
+            box-shadow: 0 20px 35px -5px rgba(245, 158, 11, 0.18);
+        }
+    </style>
+</head>
+<body class="bg-warmBg text-gray-800 antialiased min-h-screen flex flex-col justify-between relative pb-16 sm:pb-0">
+
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-amber-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="h-12 flex-shrink-0 flex items-center justify-center">
+                    <img src="https://i.ibb.co/RG4WgTqH/vedda-logo.png" alt="Vedamithra Logo" width="150" height="75">
+                </div>
+                <div>
+                    <h1 class="text-sm sm:text-base md:text-lg font-bold font-cinzel text-red-700 leading-tight">
+                        Vedamithra Astrology Research Centre
+                    </h1>
+                    <p class="text-xs text-amber-800 font-semibold font-tamil">
+                        வேதமித்ரா ஜோதிட ஆராய்ச்சி மையம்
+                    </p>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <!-- Call Now Button -->
+                <a href="tel:+917558156423" class="hidden sm:inline-flex items-center space-x-1.5 bg-green-600 hover:bg-green-700 text-white font-semibold text-xs sm:text-sm px-3.5 py-2 rounded-lg shadow-sm transition-all">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span>Call Now / அழைக்க</span>
+                </a>
+
+                <button onclick="openBookingModal()" class="inline-flex items-center space-x-1.5 bg-gradient-to-r from-amber-500 to-red-600 hover:from-amber-600 hover:to-red-700 text-white font-semibold text-xs sm:text-sm px-3.5 py-2 rounded-lg shadow-sm transition-all">
+                    <i class="fa-solid fa-calendar-check text-xs"></i>
+                    <span>Consult / ஆலோசனை</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="solar-container flex items-center justify-center relative" aria-label="Animated solar system">
+        <div class="sun-center" role="img" aria-label="The Sun"></div>
+        <div class="orbit orbit-1" aria-hidden="true"><div class="planet planet-1" title="Mercury"></div></div>
+        <div class="orbit orbit-2" aria-hidden="true"><div class="planet planet-2" title="Venus"></div></div>
+        <div class="orbit orbit-3" aria-hidden="true"><div class="planet planet-3" title="Earth"></div></div>
+        <div class="orbit orbit-4" aria-hidden="true"><div class="planet planet-4" title="Mars"></div></div>
+        <div class="orbit orbit-5" aria-hidden="true"><div class="planet planet-5" title="Jupiter"></div></div>
+        <div class="orbit orbit-6" aria-hidden="true"><div class="planet planet-6" title="Saturn"></div></div>
+        <div class="orbit orbit-7" aria-hidden="true"><div class="planet planet-7" title="Uranus"></div></div>
+        <div class="orbit orbit-8" aria-hidden="true"><div class="planet planet-8" title="Neptune"></div></div>
+        <div class="absolute bottom-4 text-center px-6 bg-slate-950/75 backdrop-blur-md py-2 rounded-full border border-amber-300/50 shadow-lg z-20">
+            <p class="text-xs sm:text-sm font-bold text-amber-100 tracking-wide">Rockfort Rajan P.S</p>
+        </div>
+    </section>
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow space-y-16">
+        
+        <section class="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 rounded-3xl p-6 sm:p-10 border border-amber-200 shadow-md flex flex-col md:flex-row items-center gap-8">
+            <div class="w-40 h-40 sm:w-48 sm:h-48 flex-shrink-0 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl relative">
+                <img src="https://i.ibb.co/chDQnnZw/astrologer.jpg" alt="Chief Astrologer" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-grow text-center md:text-left">
+                <span class="inline-block bg-amber-100 text-amber-900 border border-amber-300 text-xs font-bold px-3 py-1 rounded-full mb-3">
+                    ✨ 20+ Years of Vedic Astrology Expertise / 20+ ஆண்டுகள் வேத ஜோதிட அனுபவம்
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold font-cinzel text-red-800 mb-2">
+                    Chief Astrologer / தலைமை ஜோதிடர்
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-700 leading-relaxed mb-5 max-w-2xl">
+                    Dedicated to guiding lives through traditional Vedic astrology, ancient Prasannam systems, and exact remedies. Trusted by thousands of satisfied clients worldwide.<br>
+                    <span class="font-tamil font-semibold text-amber-900 mt-1 block">பாரம்பரிய வேத ஜோதிடம், பிரசன்ன கணக்கீடுகள் மற்றும் துல்லிய வாழ்வியல் பரிகாரங்கள் மூலம் ஆயிரக்கணக்கான வாடிக்கையாளர்களுக்கு நல்வழிகாட்டி வரும் அனுபவமிக்க ஜோதிட ஆராய்ச்சி மையம்.</span>
+                </p>
+                
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-3">
+                    <!-- Google Business Profile Link -->
+                    <a href="https://www.google.com/search?q=veddamethra+jyothida+aaraichi+maiyam+tiruchirappalli+reviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-white text-gray-800 border border-gray-300 hover:border-amber-500 font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-all">
+                        <i class="fa-brands fa-google text-red-500 text-base"></i>
+                        <span>Read Google Reviews</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-400"></i>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/aehfxg7CAj5wYbHy7?g_st=aw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-amber-50 text-amber-900 border border-amber-300 hover:bg-amber-100 font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-all"><i class="fa-solid fa-map-location-dot"></i><span>Map & Directions</span></a>                    <!-- Direct Call Button -->
+                    <a href="tel:+917558156423" class="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-xs transition-all">
+                        <i class="fa-solid fa-phone text-xs"></i>
+                        <span>+91 75581 56423</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-cinzel text-red-700 mb-3">
+                    Our Specialized Services / எங்கள் சிறப்பு ஜோதிட சேவைகள்
+                </h2>
+                <div class="w-20 h-1.5 bg-amber-500 mx-auto rounded-full mb-3 shadow-xs"></div>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed font-tamil">
+                    பாரம்பரிய வேத ஜோதிட முறைகள், பிரசன்ன கணக்கீடுகள் மற்றும் துல்லியமான ஆன்மீக பரிகாரங்கள்.
+                </p>
+            </div>
+
+            <!-- 13 Services Grid -->
+            <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Populated via JavaScript -->
+            </div>
+        </section>
+
+        <section class="border-t border-amber-200 pt-12">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold font-cinzel text-red-700 mb-3">
+                    Astrology Articles & Spiritual Insights / ஜோதிடக் கட்டுரைகள்
+                </h2>
+                <div class="w-20 h-1.5 bg-amber-500 mx-auto rounded-full mb-3 shadow-xs"></div>
+                <p class="text-xs sm:text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed font-tamil">
+                    வாஸ்து, பரிகாரங்கள், நியுமராலஜி மற்றும் கோச்சார பலன்கள் பற்றிய எங்களின் சுவாரஸ்யமான கட்டுரைகள்.
+                </p>
+            </div>
+
+            <!-- Blog Grid -->
+            <div id="blogGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Blog posts rendered via JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/917558156423?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20%E0%AE%B5%E0%AF%87%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%AE%E0%AE%B8%E0%AE%BF%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AE%BE%20%E0%AE%9C%E0%AF%8B%E0%AE%A4%E0%AE%BF%E0%AE%9F%20%E0%AE%86%E0%AE%B0%E0%AE%BE%E0%AE%AF%E0%AF%8D%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%BF%20%E0%AE%AE%E0%AF%AF%E0%AE%AE%E0%AF%8D%20%E0%AE%AE%E0%AF%82%E0%AE%B2%E0%AE%AE%E0%AE%BE%E0%AE%95%20%E0%AE%86%E0%AE%B2%E0%AF%8B%E0%AE%9A%E0%AE%A9%E0%AF%8D%E0%AE%AA%E0%AF%86%E0%AE%B0%20%E0%AE%B5%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D." target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-3.5 sm:p-4 shadow-2xl flex items-center justify-center transition-transform hover:scale-110 group">
+        <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-bold text-xs pl-0 group-hover:pl-2">
+            WhatsApp Chat
+        </span>
+    </a>
+
+    <footer class="bg-amber-100/70 border-t border-amber-200 py-6 text-center text-xs text-amber-900">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p class="font-medium">
+                &copy; 2026 Vedamithra Astrology Research Centre. All Rights Reserved. (வேதமித்ரா ஜோதிட ஆராய்ச்சி மையம்)
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 text-amber-800 font-semibold">
+                <a href="tel:+917558156423" class="inline-flex items-center hover:text-red-700">
+                    <i class="fa-solid fa-phone text-amber-600 mr-1.5"></i> +91 75581 56423
+                </a>
+                <a href="https://www.google.com/search?q=veddamethra+jyothida+aaraichi+maiyam+tiruchirappalli+reviews" target="_blank" class="inline-flex items-center hover:text-red-700">
+                    <i class="fa-solid fa-location-dot text-amber-600 mr-1.5"></i> Google Business Profile
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 backdrop-blur-xs p-4">
+        <div class="bg-white max-w-md w-full p-6 rounded-2xl border border-amber-300 shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="font-cinzel text-lg font-bold text-red-700 mb-1">Consultation Request / ஆலோசனை முன்பதிவு</h3>
+            <p class="text-xs text-gray-500 mb-4">Fill in your details to book a divine astrological consultation.</p>
+            <form id="bookingForm" onsubmit="sendBookingToWhatsApp(event)" class="space-y-3">
+                <div class="rounded-xl border border-amber-300 bg-amber-50 p-3 text-left">
+                    <p class="text-xs font-bold text-amber-950">Please call the centre before booking.</p>
+                    <p class="mt-1 text-xs text-amber-900">Your request opens as a WhatsApp draft. Review it and tap Send in WhatsApp.</p>
+                    <a href="tel:+917558156423" class="mt-2 inline-flex items-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-xs font-bold text-white hover:bg-green-700"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>Call +91 75581 56423</span></a>
+                </div>
+                <input name="customerName" type="text" placeholder="Name / பெயர்" autocomplete="name" required class="w-full bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500">
+                <div class="grid grid-cols-2 gap-3">
+                    <label class="block text-xs font-semibold text-gray-700">Date of birth<input name="birthDate" type="date" required class="mt-1 w-full bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500"></label>
+                    <label class="block text-xs font-semibold text-gray-700">Time of birth<input name="birthTime" type="time" required class="mt-1 w-full bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500"></label>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <input name="birthCity" type="text" placeholder="Birth city / பிறந்த ஊர்" required class="w-full min-w-0 bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500">
+                    <input name="birthState" type="text" placeholder="Birth state / மாநிலம்" required class="w-full min-w-0 bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500">
+                </div>
+                <select name="service" required onchange="updateOtherServiceField()" class="w-full bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500">
+                    <option value="" disabled selected>Select a preferred service / சேவையைத் தேர்ந்தெடுக்கவும்</option>
+                    <option>Marriage Matching</option><option>Horoscope Reading</option><option>Prasannam</option><option>Numerology</option><option>Vastu</option><option value="other">Other / மற்றவை</option>
+                </select>
+                <div id="otherServiceField" class="hidden">
+                    <label for="otherServiceDescription" class="block text-xs font-semibold text-gray-700">Describe the service you need
+                        <textarea id="otherServiceDescription" name="otherServiceDescription" rows="2" placeholder="Describe the service you need" class="mt-1 w-full bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500"></textarea>
+                    </label>
+                </div>
+                <label class="block text-xs font-semibold text-gray-700">Preferred consultation time
+                    <select name="preferredTime" required class="mt-1 w-full bg-amber-50/50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none focus:border-amber-500">
+                        <option value="" disabled selected>Select preferred time</option><option>Morning</option><option>Afternoon</option><option>Evening</option>
+                    </select>
+                </label>
+                <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 rounded-lg text-xs shadow transition-all"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Continue in WhatsApp</span></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Success Message Modal -->
+    <div id="alertModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 backdrop-blur-xs p-4">
+        <div class="bg-white max-w-sm w-full p-6 rounded-2xl border border-amber-300 shadow-2xl text-center">
+            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <i class="fa-solid fa-circle-check text-2xl"></i>
+            </div>
+            <h4 class="font-bold text-base text-gray-800 mb-1">நன்றி! / Thank You!</h4>
+            <p class="text-xs text-gray-600 mb-4">உங்கள் ஆலோசனை கோரிக்கை பெறப்பட்டது. விரைவில் தொடர்பு கொள்கிறோம்.</p>
+            <button onclick="closeCustomAlert()" class="bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs px-6 py-2 rounded-lg transition-all">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <!-- Read Blog Post Modal -->
+    <div id="blogModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 backdrop-blur-xs p-4">
+        <div class="bg-white max-w-2xl w-full p-6 rounded-2xl border border-amber-300 shadow-2xl relative max-h-[85vh] overflow-y-auto">
+            <button onclick="closeBlogModal()" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="blogModalTitle" class="font-cinzel text-xl font-bold text-red-800 mb-3"></h3>
+            <div id="blogModalContent" class="text-xs sm:text-sm text-gray-700 leading-relaxed space-y-3"></div>
+        </div>
+    </div>
+
+    <script>
+        const servicesData = [
+            {
+                id: 1,
+                image: "https://i.ibb.co/TM9VxKdK/thirumanam.jpg",
+                title: "1. திருமண பொருத்தம் / Marriage Matching",
+                desc: "நீடித்த தம்பதியர் ஒற்றுமைக்கு 10 பொருத்தங்கள் மற்றும் தோஷங்கள் துல்லியமாக கணிக்கப்படும். Comprehensive 10-porutham compatibility analysis ensuring long-lasting marital harmony."
+            },
+            {
+                id: 2,
+                image: "https://i.ibb.co/7Jvn0dsP/kulandai.jpg",
+                title: "2. குழந்தை பாக்கியம் / Child Birth Predictions",
+                desc: "புத்திர தோஷ நிவர்த்தி மற்றும் குழந்தை பாக்கியம் பற்றிய துல்லியமான ஜோதிட கணிப்புகள். Accurate astrological insights regarding progeny prospects and effective remedies."
+            },
+            {
+                id: 3,
+                image: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c",
+                title: "3. கடிகார பிரசன்னம் / Clock Prasannam",
+                desc: "கேள்வி கேட்கும் நேரத்தை வைத்து உடனடியாக தெய்வீக பதிலைக் கண்டறியும் முறை. Instant answers to urgent questions based on the exact query clock time."
+            },
+            {
+                id: 4,
+                image: "https://i.ibb.co/XkvNF4YY/choli.jpg",
+                title: "4. சோழி பிரசன்னம் / Cowrie Prasannam",
+                desc: "பண்டைய சோழி உருட்டி மறைந்திருக்கும் உண்மைகளையும் எதிர்காலத்தையும் கணித்தல். Sacred cowrie shell divination revealing hidden factors and future outcomes."
+            },
+            {
+                id: 5,
+                image: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86",
+                title: "5. ஜாமக்கோள் பிரசன்னம் / Jamakol Prasannam",
+                desc: "துல்லியமாக நிகழ்வுகள் மற்றும் தொலைந்த பொருட்களைக் கண்டறியும் சிறப்பு முறை. Traditional horary technique pinpointing accurate events and finding lost items."
+            },
+            {
+                id: 6,
+                image: "https://i.ibb.co/dw2wwCVQ/vetrilai.png",
+                title: "6. வெற்றிலை பிரசன்னம் / Betel Leaf Prasannam",
+                desc: "வெற்றிலையின் தன்மையைக் கொண்டு உடல்நலம் மற்றும் வாழ்வியல் கேள்விகளுக்குப் பதில். Betel leaf reading for health, prosperity, and immediate spiritual guidance."
+            },
+            {
+                id: 7,
+                image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5",
+                title: "7. ஆத்மாக்கள் மூலமாக வழிகாட்டுதல் / Soul Guidance",
+                desc: "உயர்ந்த ஆன்மீக ஆற்றல்கள் மூலமாகப் பெறப்படும் தெய்வீக நல்வழிகாட்டுதல். Divine guidance channeled from higher spiritual entities and benevolent souls."
+            },
+            {
+                id: 8,
+                image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac",
+                title: "8. ஆத்மாக்களை அழைத்து பேசும் பயிற்சி / Soul Communication",
+                desc: "பாதுகாப்பான முறையில் சாத்வீக ஆன்மீக ஆற்றல்களுடன் தொடர்புகொள்ளும் பயிற்சி. Safe and structured guidance for connecting with positive spiritual energies."
+            },
+            {
+                id: 9,
+                image: "https://images.unsplash.com/photo-1532012197267-da84d127e765",
+                title: "9. ஜாதக பலன்கள் / Traditional Horoscope Reading",
+                desc: "வேத ஜோதிட விதிகளின்படி பிறப்பு ஜாதகத்திற்கு விரிவான பலன்கள் கூறுதல். In-depth natal chart analysis using authentic ancient Vedic astrology rules."
+            },
+            {
+                id: 10,
+                image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
+                title: "10. பிறந்த குழந்தைகளுக்கு ஜாதகம் / Newborn Horoscope",
+                desc: "பிறந்த குழந்தைகளுக்கு மிகத் துல்லியமாகக் கணக்கிட்டு ஜாதகம் எழுதித் தருதல். Precise birth chart calculations and documentation for newborns."
+            },
+            {
+                id: 11,
+                image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+                title: "11. நிலத்தடி நீரோட்டம் / Groundwater Dowsing",
+                desc: "போர்வெல் மற்றும் விவசாய நிலங்களுக்கு நீரோட்டத்தை துல்லியமாகக் கணித்தல். Accurate detection of underground water points for borewells and farmlands."
+            },
+            {
+                id: 12,
+                image: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf",
+                title: "12. நியுமராலஜி முறை / Numerology Predictions",
+                desc: "பெயர் மாற்றம், அதிர்ஷ்ட எண்கள் மற்றும் வெற்றிக்கான நியுமராலஜி கணிப்புகள். Name spelling corrections, lucky numbers, and birth date numerology analysis."
+            },
+            {
+                id: 13,
+                image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+                title: "13. வாஸ்து சாஸ்திரம் & பரிகாரம் / Vastu Solutions",
+                desc: "வீடு மற்றும் அலுவலகத்திற்கு எளிய வாழ்வியல் பரிகாரங்களுடன் சிறந்த வாஸ்து. Expert Vastu assessment with simple lifestyle remedies for home and office."
+            }
+        ];
+
+        const blogData = [
+            {
+                id: 1,
+                image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+                title: "வீட்டில் வாஸ்து தோஷம் நீங்க எளிய பரிகாரங்கள்",
+                summary: "வீட்டின் முக்கிய கதவு, பூஜை அறை மற்றும் சமையலறை வாஸ்து அமைப்புகளைச் சீரமைக்கும் எளிய முறைகள்.",
+                content: "வாஸ்து சாஸ்திரம் என்பது மனிதர்கள் வாழும் இடத்தில் நேர்மறை ஆற்றலைப் பெருக்கும் அறிவியல். வீட்டில் நுழைவு வாயிலில் சுத்தமான நீர் வைத்து பூக்கள் மிதக்க விடுவது, வடகிழக்கு மூலையைத் தூய்மையாக வைப்பது போன்றவை குடும்பத்தில் மகிழ்ச்சியையும் லட்சுமி கடாட்சத்தையும் பெருக்கும். Vastu Shastra balances cosmic energy in living spaces. Placing fresh water with flowers near the entrance and keeping the northeast corner clean attracts prosperity and peaceful harmony."
+            },
+            {
+                id: 2,
+                image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5",
+                title: "செவ்வாய் தோஷம் பற்றிய பயமும் உண்மைகளும்",
+                summary: "செவ்வாய் தோஷம் உள்ளவர்கள் பயப்படத் தேவையில்லை. அதற்கான விதிவிலக்குகளும் பரிகாரங்களும்.",
+                content: "ஜாதகத்தில் செவ்வாய் கிரகம் 1, 2, 4, 7, 8, 12 ஆகிய இடங்களில் இருந்தால் செவ்வாய் தோஷம் எனக் கூறப்படுகிறது. ஆனால் அதற்கு ஏராளமான விதிவிலக்குகள் (Exemptions) உள்ளன. சரியான ஜோதிட ஆய்வின் மூலம் பொருத்தமான ஜாதகத்தைச் சேர்க்கும் போது சுபயோகம் உண்டாகும். Mars placement in specific houses creates Chevvai Dosham, but numerous exemptions exist. Proper matching by an expert astrologer ensures a harmonious and blissful married life."
+            },
+            {
+                id: 3,
+                image: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf",
+                title: "நியுமராலஜி மூலம் வெற்றி பெறுவது எப்படி?",
+                summary: "உங்கள் பெயர் எண் மற்றும் பிறந்த தேதிக்கு ஏற்ப பெயரின் எழுத்துக்களை மாற்றி வெற்றி பெறுங்கள்.",
+                content: "எண்கள் பிரபஞ்ச அதிர்வுகளுடன் தொடர்புடையவை. பிறந்த தேதியின் கூட்டு எண்ணுக்கு (Life Path Number) ஏற்ப பெயரின் கூட்டெண்ணை அமைத்துக் கொள்ளும்போது தொழில் மற்றும் வாழ்க்கையில் தடைகள் நீங்கி வெற்றி கிடைக்கும். Numbers resonate with cosmic vibration. Aligning your name's total value with your Life Path number eliminates career hurdles and promotes financial growth."
+            }
+        ];
+
+        function renderServices() {
+            const grid = document.getElementById('servicesGrid');
+            if (!grid) return;
+            grid.innerHTML = '';
+
+            servicesData.forEach(service => {
+                const card = document.createElement('div');
+                card.className = "service-card rounded-2xl overflow-hidden flex flex-col justify-between bg-white border border-amber-200";
+                card.innerHTML = `
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="${service.image}" alt="${service.title}" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold font-cinzel text-base sm:text-lg text-red-800 mb-2 leading-snug">${service.title}</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">${service.desc}</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <button onclick="openBookingModal()" class="w-full bg-amber-50 hover:bg-amber-500 hover:text-white text-amber-900 font-semibold text-xs sm:text-sm py-2.5 px-4 rounded-xl transition-all border border-amber-300 flex items-center justify-center space-x-2 shadow-xs">
+                            <span>Consult Service / சேவை பெறுக</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function renderBlogs() {
+            const grid = document.getElementById('blogGrid');
+            if (!grid) return;
+            grid.innerHTML = '';
+
+            blogData.forEach(blog => {
+                const card = document.createElement('div');
+                card.className = "blog-card rounded-2xl overflow-hidden flex flex-col justify-between bg-white border border-amber-200";
+                card.innerHTML = `
+                    <div>
+                        <div class="h-40 overflow-hidden relative">
+                            <img src="${blog.image}" alt="${blog.title}" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold font-cinzel text-base text-red-800 mb-2 leading-snug">${blog.title}</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed">${blog.summary}</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <button onclick="openBlogModal(${blog.id})" class="text-xs font-bold text-amber-700 hover:text-red-700 inline-flex items-center space-x-1">
+                            <span>Read More / மேலும் படிக்க</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function openBlogModal(blogId) {
+            const blog = blogData.find(b => b.id === blogId);
+            if (!blog) return;
+
+            document.getElementById('blogModalTitle').innerText = blog.title;
+            document.getElementById('blogModalContent').innerHTML = `<p>${blog.content}</p>`;
+
+            const modal = document.getElementById('blogModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeBlogModal() {
+            const modal = document.getElementById('blogModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function updateOtherServiceField() {
+            const service = document.querySelector('#bookingForm [name="service"]');
+            const wrapper = document.getElementById('otherServiceField');
+            const description = document.getElementById('otherServiceDescription');
+            if (!service || !wrapper || !description) return;
+            const isOther = service.value === 'other';
+            wrapper.classList.toggle('hidden', !isOther);
+            description.required = isOther;
+            if (!isOther) description.value = '';
+        }
+
+        function sendBookingToWhatsApp(event) {
+            event.preventDefault();
+            const form = event.currentTarget;
+            if (!form.reportValidity()) return;
+            const data = new FormData(form);
+            const service = String(data.get('service') || '').trim();
+            const message = [
+                'Hello Vedamithra Astrology Research Centre, I would like to enquire about a consultation.',
+                `Name: ${String(data.get('customerName') || '').trim()}`,
+                `Date of birth: ${data.get('birthDate')}`,
+                `Time of birth: ${data.get('birthTime')}`,
+                `Place of birth: ${String(data.get('birthCity') || '').trim()}, ${String(data.get('birthState') || '').trim()}`,
+                `Preferred service: ${service === 'other' ? 'Other / மற்றவை' : service}`,
+                service === 'other' ? `Service description: ${String(data.get('otherServiceDescription') || '').trim()}` : '',
+                `Preferred consultation time: ${data.get('preferredTime')}`
+            ].filter(Boolean).join('\n');
+            const url = `https://wa.me/917558156423?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+        function openBookingModal() {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeBookingModal() {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function showCustomAlert() {
+            const modal = document.getElementById('alertModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCustomAlert() {
+            const modal = document.getElementById('alertModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        window.onload = function() {
+            renderServices();
+            renderBlogs();
+        };
+    </script>
+</body>
+</html>
+
